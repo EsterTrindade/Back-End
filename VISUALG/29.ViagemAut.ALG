@@ -1,0 +1,37 @@
+Algoritmo "ViagemAut"
+
+// Descrição   : Faça um algoritmo que calcule a quantidade de litros de
+//combustível gasta em uma viagem, utilizando um automóvel
+//que faz 12Km por litro. Para obter o cálculo, o usuário deve
+//fornecer o tempo gasto na viagem e a velocidade média
+//durante ela. Desta forma, será possível obter a distância
+//percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE.
+//Tendo o valor da distância, basta calcular a quantidade de
+//litros de combustível utilizada na viagem com a fórmula:
+//LITROS_USADOS = DISTANCIA / 12. O programa deve
+//apresentar os valores da velocidade média, tempo gasto na
+//viagem, a distância percorrida e a quantidade de litros
+//utilizada na viagem.
+// Autor(a)    : Ester Trindade
+// Data atual  : 16/05/2024
+
+Var
+
+   tempo, vel, distancia, litros : real
+
+Inicio
+
+   escreva("Informe o tempo gasto em horas:")
+   leia(tempo)
+
+   escreva("Informe a velocidade média do automóvel:")
+   leia(vel)
+
+   distancia <- tempo * vel
+
+   litros <- distancia/12
+
+   escreval("Nesta viajem de", tempo," horas, a uma velocidade média de", vel,"km/h o automóvel percorreu", distancia,"KM e utilizou", litros,"litros de combustivel")
+
+
+Fimalgoritmo
